@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-群组选择器</title>
+    <!--
+    群组选择器:同时定义好几个选择器,用逗号隔开
+    即div,.p,div>span
+    div>p表示可以在不同的div下作用.
+    -->
+    <style>
+        /*群组选择器*/
+       div>p,.line,#des{
+          color: darkblue;font-size: 30px;font-family: Chalkboard;
+       }
+
+    </style>
+
+</head>
+<body>
+<div>
+<p><span class="line">春</span><label id="des">江花</label>月夜</p>
+
+</div>
+</body>
+</html>

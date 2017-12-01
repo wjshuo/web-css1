@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-属性选择器</title>
+    <!--
+    属性选择器:针对某些属性进行的统一配置
+    语法:input[type="text"]{...}
+    -->
+    <style>
+        /*属性选择器 给input标签中所有属性为text的设置样式  .solid:实线
+        dotted:虚线*/
+        input[type="text"]{
+        color: red;border: 1px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<form action="" method="post">
+    <!--label标签:将提示文字与input标签绑定,当点击文字时自动焦点到对应的输入框中
+    绑定方式,通过label的for找input的id-->
+    <label for="name">用户名</label>
+    <input id="name" type="text" placeholder="请输入用户名">
+    <br><br><br>
+
+    <label>密码</label>
+    <input type="password" placeholder="请输入密码">
+    <br><br><br>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+</form>
+
+</body>
+</html>

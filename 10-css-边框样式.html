@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-边框样式</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /*边框样式  dotted:虚线*/
+            border: 1px dotted red;
+            border-right-style: solid;
+            border-right-color: coral;
+
+        }
+        /*后代选择器*/
+        ul li{
+            /*无序列表左侧的图标样式设置  将点点点换为空心圆*/
+            list-style-type: circle;
+            /*将点点换为图片*/
+            list-style-image: url("imgs/a.jpg");
+        }
+        
+
+    </style>
+
+</head>
+<body>
+<div>
+<ul>
+    <li>吃饭</li>
+    <li>睡觉</li>
+    <li>吃鸡</li>
+</ul>
+</div>
+</body>
+</html>

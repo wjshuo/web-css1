@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS引入</title>
+
+    <!--CSS:用于装饰页面
+    引入方式:1.内联式(行内引入):在标签内部配置style属性
+    <div style="color:red">不推荐使用,管理不方便
+    2.内部引入式:在html网页中的head标签建style标签
+    <style>
+    div{
+    color:red;
+    }
+    </style>
+    3.外部引入式:单独建样式文件,html网页通过link标签引入
+    <link rel="stylesheet" href="a.css" type="text/css"
+
+    -->
+    <!--配置内部样式-->
+    <style type="text/css">
+        /*
+        样式语法:
+        选择器{
+        属性名:属性值
+        }
+        选择器:标签选择器:给某一个标签设置样式,例如div.p.h1..
+        类选择器:根据标签的class属性设置样式  .className;标签中的class可以重名
+        id选择器:根据标签的id属性设置样式  #idName; 标签中的id在当前页必须保証持唯一
+        */
+        /*标签选择器*/
+        div{
+            background-color: aqua;width: 100px;height: 100px;
+            /*组件外边距,即设置的是组件与组件的间隔*/ margin: 10px;
+
+        }
+        /*类选择器,以点开头,其中div1是定义类名*/
+        .div1{
+            background-color: aquamarine;width: 20px;height: 20px;
+            margin: 10px;
+        }
+        #div2{background-color: chartreuse;width: 50px;height: 50px;
+            margin: 10px}
+        /*
+        选择器权值(权重):决定组件采用的样式优先级
+        1.行内选择器:1000,优先级最高,即<div style="..">
+        2.id选择器:100,即用#号开头定义的,<style>#idName{..}
+        3.类选择器:10,即用点开头定义的,<style>.className{..}
+        4.标签选择器:1,即用标签名定义的<style>div{..}
+        */
+
+
+
+    </style>
+
+</head>
+<body>
+<!--第一种 内联式-->
+<div style="background-color: aqua;width: 30px;height: 30px"></div>
+<!--第二种 内部引入-->
+<div class="div1"></div>
+<div></div>
+<div id="div2" class="div1"></div>
+
+</body>
+</html>

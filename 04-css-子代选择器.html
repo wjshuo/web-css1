@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-子代选择器</title>
+
+    <!
+    子代选择器找的是直接子标签,用大于号标示
+    代表当前标签的指代情况.可以一直向下寻找.
+    --> --
+    <style>
+        /*子代选择器*/
+        div>span{
+            color: aqua;
+            font-size: 30px;
+        }
+        div>strong{color: red;font-size: 60px}
+
+        div>.line{
+            color: green;font-size: 40px;
+        }
+        div>span>strong{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <span class="line"><strong>战</strong></span>
+    <span class="line">神</span>
+    <span><span style="color: aquamarine">刑</span></span>
+    <span>天</span>
+</div>
+
+
+
+</body>
+</html>

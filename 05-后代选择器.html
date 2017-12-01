@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <!--后代选择器是同一个标签内的所有,不管是直接的子标签还是间接的子标签
+    后代用空格
+    例如 div p,即div下所有的p标签
+    -->
+    <style>
+        div p{color: orange;font-size: larger}
+
+        .div1 p{color: aquamarine;font-size: medium}
+
+    </style>
+
+
+</head>
+<body>
+<div class="div1">
+    <span>
+    <p>一篇诗,一斗酒,一曲长歌,一剑天涯</p>
+    <p>天下如棋,一步三算</p>
+    </span>
+    <p>三尺长剑斩不断相思情缠</p>
+    <p>凤兮凤兮归故乡,遨游四海求其凰</p>
+</div>
+</body>
+</html>

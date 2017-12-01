@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS内部样式表</title>
+
+    <!--CSS:层叠样式表,简称样式文件,用于装饰网页
+    三种引入方式:
+    1.内部样式表,内联式,在当前页面中的<head>标签中定义,
+    定义的方式是用<style>标签包裹起来,这个标签有一个默认的type属性,
+    text/css
+    2.外部样式表,把样式内容定义在一个独立的css文件中,通过<link>标签引入
+    3.内嵌式,相对使用较少,在<style>标签内部用@import引入
+    -->
+    <style type="text/css">
+0
+        /*在style标签中的注释用的是斜杠星
+        定义样式的规则是:选择器+样式声明
+        div就是一种选择器,大括号包裹起来的就是样式声明
+        */
+
+        div{
+            /*背景颜色*/
+            background-color: aliceblue;
+            /*字体设置*/
+            font-size: 30px;
+            /*字体*/
+            font-family: "Xingkai SC";
+            /*字体样式:斜体italic.加粗oblique.正常normal*/
+            font-style: italic;
+            /* 设置宽度*/
+            width: 300px;
+            /*设置高度*/
+            height: 300px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div>
+<p><strong>床前</strong>明月光</p>
+<p>疑是地上霜</p>
+<p>举头望明月</p>
+<p>低头思故乡</p>
+</div>
+</body>
+</html>
